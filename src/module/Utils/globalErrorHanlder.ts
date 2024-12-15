@@ -3,7 +3,12 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { NextFunction, Request, Response } from 'express';
 
-export const globalErrorHandling = (err: any, req: Request, res: Response,next:NextFunction) => {
+export const globalErrorHandling = (
+  err: any,
+  req: Request,
+  res: Response,
+  next: NextFunction,
+) => {
   const statusCode = 500;
   const message = err.message || 'Something went wrong';
 

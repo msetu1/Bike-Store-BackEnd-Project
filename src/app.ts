@@ -9,9 +9,9 @@ app.use(express.json());
 app.use(cors());
 
 // application route
-app.use('/api/products',ProductRoute);
+app.use('/api/products', ProductRoute);
 
-app.get('/', (req:Request, res:Response) => {
+app.get('/', (req: Request, res: Response) => {
   res.send('Server is running');
 });
 
